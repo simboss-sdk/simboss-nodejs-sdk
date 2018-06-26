@@ -6,7 +6,7 @@ const simbossSdk = new simbossSdkLib({
   secret: 'you secret'
 })
 
-const getAccount =  async () => {
+const getAccount = async () => {
   try {
     let rst = await simbossSdk.dashboard.get()
     // 错误识别
@@ -18,4 +18,6 @@ const getAccount =  async () => {
     console.warn(err.toString())
   }
 }
+
+getAccount()
 
