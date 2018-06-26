@@ -1,0 +1,29 @@
+{
+  "name": "simboss-nodejs-sdk",
+  "version": "1.0.0",
+  "description": "simboss平台NODE SDK",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha ./test/test.js"
+  },
+  "keywords": [
+    "simboss"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "crypto-js": "^3.1.9-1",
+    "qs": "^6.5.2"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0"
+  },
+  "engines": {
+    "node": ">= 6.14.3"
+  }
+}
