@@ -6,7 +6,8 @@ const simbossSdk = new simbossSdkLib({
   secret: 'you secret'
 })
 
-simbossSdk.dashboard.get()
+// 使用promise语法
+simbossSdk.sms.list()
   .then(function (rst) {
     if (!rst.code) {
       // 执行业务
