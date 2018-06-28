@@ -24,7 +24,7 @@
 #### 初始化
 - 你可以直接调用构造函数进行初始化，同时也可以调用初始化函数进行初始化
 
-
+```
 	const simbossSdkLib = require('../index.js');
 	// 你可以使用调用构造函数的方法
 	const simbossSdk = new simbossSdkLib({
@@ -36,6 +36,7 @@
 			appid: 'you appid',
 			secret: 'you secret'
 		})
+```
 	
 - 初始化参数
 
@@ -54,14 +55,17 @@
 
 1、promise
 
+```js
 	Instance.name.action(data).then(data=>{
-		// your process
-	}).catch(e=>{
-		// err process
-	})
-	
+			// your process
+		}).catch(e=>{
+			// err process
+		})
+```
+
 2、async/await
 	
+```js
 	async (data) => {
 		try{
 			let rst = await Instance.name.action(data)
@@ -71,6 +75,7 @@
 			// err process
 		}
 	} 
+```
 
 - 如果返回值的code不为0，请自行根据 [SIMBOSS-API](https://simboss.com/www/api-doc/index.html) 接口规范-参数规范 进行封装。
 
