@@ -45,26 +45,26 @@
 | API名称 | 方法 | 请求参数 |    
 | ------- | --------- | ---------:|
 |1.1 账户总览接口         |  Instance.dashboard.get  |  无  |
-|2.1 批量卡详情			 | Instance.device.detailBatch        |  iccids,imsis,msisdns  |
-|2.2 单卡详情				 | Instance.device.detail             |    iccid,imsi,msisdn  |
-|2.3 单卡已订购套餐列表	 | Instance.device.orderedPlans       |  iccid,imsi,msisdn  |
-|2.4 单卡可续费套餐信息	 | Instance.device.rateplans          |   iccid,imsi,msisdn    |
-|2.5 单卡续费				 | Instance.device.recharge           |   iccid,imsi,msisdn,ratePlanId,month,externalOrder  |
-|2.6 单卡续费记录			 | Instance.device.rechargeRecords    |   iccid,imsi,msisdn  |
-|2.7 实时连接状态查询		 | Instance.device.gprsStatus         |   iccid,imsi,msisdn   |
-|2.8 实时用户状态查询		 | Instance.device.userStatus         |   iccid,imsi,msisdn   |
-|2.9 设备实时开关机状态查询 | Instance.device.runningStatus      |  iccid,imsi,msisdn  |
-|2.10 查询设备套餐概要     | Instance.device.ratePlanSummary    |  iccid,imsi,msisdn   |
-|2.11 流量池卡开关网络     | Instance.device.modifyDeviceStatus |   iccid,imsi,msisdn,status  |
-|2.12 日用量查询          | Instance.device.dailyUsage         |    iccid,imsi,msisdn,date       |
-|2.13 取消测试期          | Instance.device.cancelTesting      |  iccid,imsi,msisdn   |
-|2.14 更新备注            | Instance.device.memoUpdate         |   iccid,imsi,msisdn,memo   |
-|2.15 批量更新备注         | Instance.device.memoBatchUpdate    |  iccids,imsis,msisdns,memo   |
-|3.1 流量池详情			 | Instance.pool.detail           |   iccid,imsi,msisdn   |
+|2.1 批量卡详情			 | Instance.device.detailBatch        |  {iccids,imsis,msisdns}  |
+|2.2 单卡详情				 | Instance.device.detail             |    {{iccid,imsi,msisdn}}  |
+|2.3 单卡已订购套餐列表	 | Instance.device.orderedPlans       |  {{iccid,imsi,msisdn}}  |
+|2.4 单卡可续费套餐信息	 | Instance.device.rateplans          |   {iccid,imsi,msisdn}    |
+|2.5 单卡续费				 | Instance.device.recharge           |   {iccid,imsi,msisdn,ratePlanId,month,externalOrder}  |
+|2.6 单卡续费记录			 | Instance.device.rechargeRecords    |   {iccid,imsi,msisdn}  |
+|2.7 实时连接状态查询		 | Instance.device.gprsStatus         |   {iccid,imsi,msisdn}   |
+|2.8 实时用户状态查询		 | Instance.device.userStatus         |   {iccid,imsi,msisdn}   |
+|2.9 设备实时开关机状态查询 | Instance.device.runningStatus      |  {iccid,imsi,msisdn}  |
+|2.10 查询设备套餐概要     | Instance.device.ratePlanSummary    |  {iccid,imsi,msisdn}   |
+|2.11 流量池卡开关网络     | Instance.device.modifyDeviceStatus |   {iccid,imsi,msisdn,status}  |
+|2.12 日用量查询          | Instance.device.dailyUsage         |    {iccid,imsi,msisdn,date}       |
+|2.13 取消测试期          | Instance.device.cancelTesting      |  {iccid,imsi,msisdn}   |
+|2.14 更新备注            | Instance.device.memoUpdate         |   {iccid,imsi,msisdn,memo}   |
+|2.15 批量更新备注         | Instance.device.memoBatchUpdate    |  {iccids,imsis,msisdns,memo}   |
+|3.1 流量池详情			 | Instance.pool.detail           |   {iccid,imsi,msisdn}   |
 |3.2 用户下所有流量池信息   | Instance.pool.list             |    无    |
-|4.1 提交实名认证信息		 | Instance.realname.submit   |    iccid,imsi,msisdn,name,licenseType,licenseCode,phone,extenalUserName,pic1,pic2,pic3     |
-|5.1 短信下发接口			 | Instance.sms.send                  |   iccid,imsi,msisdn,text,msgId    |
-|5.2 短信查询             | Instance.sms.list                  |   iccid,imsi,msisdn,pageNo  |
+|4.1 提交实名认证信息		 | Instance.realname.submit   |    {iccid,imsi,msisdn,name,licenseType,licenseCode,phone,extenalUserName,pic1,pic2,pic3}     |
+|5.1 短信下发接口			 | Instance.sms.send                  |   {iccid,imsi,msisdn,text,msgId}    |
+|5.2 短信查询             | Instance.sms.list                  |   {iccid,imsi,msisdn,pageNo}  |
 
 
 
