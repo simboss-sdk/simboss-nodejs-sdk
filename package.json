@@ -1,6 +1,6 @@
 {
   "name": "simboss-nodejs-sdk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "simboss平台NODE SDK",
   "main": "index.js",
   "directories": {
@@ -10,7 +10,7 @@
     "test": "./node_modules/mocha/bin/mocha ./test/test.js"
   },
   "keywords": [
-    "simboss"
+    "simboss","simCard"
   ],
   "author": "",
   "license": "ISC",
