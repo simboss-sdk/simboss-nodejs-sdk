@@ -24,7 +24,7 @@
 #### 初始化
 - 你可以直接调用构造函数进行初始化，同时也可以调用初始化函数进行初始化
 
-```
+```js
 	const simbossSdkLib = require('../index.js');
 	// 你可以使用调用构造函数的方法
 	const simbossSdk = new simbossSdkLib({
