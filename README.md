@@ -22,19 +22,29 @@
 
 
 #### 初始化
-你可以直接调用构造函数进行初始化，同时也可以调用初始化函数进行初始化
+- 你可以直接调用构造函数进行初始化，同时也可以调用初始化函数进行初始化
+
 
 	const simbossSdkLib = require('../index.js');
 	// 你可以使用调用构造函数的方法
 	const simbossSdk = new simbossSdkLib({
 			appid: 'you appid',
 			secret: 'you secret'
-  	})
+		})
 	// 也可以使用init来进行初始化
 	const simbossSdk = simbossSdkLib.init({
 			appid: 'you appid',
 			secret: 'you secret'
 		})
+	
+- 初始化参数
+
+| 参数 | 功能 | 
+| ------- | ---------:|
+| appid |  你的 SIMBOSS appid  |
+| secret |  你的 SIMBOSS secret  |
+| timeout | 请求超时时间timeout |
+	
 #### 调用
 
 - 我们的代码对方法的封装基于Promise的风格进行，可以支持所有用promise实现的调用。
