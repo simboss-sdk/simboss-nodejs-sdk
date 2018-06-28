@@ -35,6 +35,34 @@
 			appid: 'you appid',
 			secret: 'you secret'
 		})
+#### 调用
+
+- 我们的代码对方法的封装基于Promise的风格进行，可以支持所有用promise实现的调用。
+
+代码将返回一个promise对象。你可以使用异步调用来决议或者自行决议。
+不支持回调风格，如需使用，请自行封装。
+
+1、promise
+
+	Instance.name.action(data).then(data=>{
+		// your process
+	}).catch(e=>{
+		// err process
+	})
+	
+2、async/await
+	
+	async (data) => {
+		try{
+			let rst = await Instance.name.action(data)
+			if (rst.code) {return false}
+			//your process
+		} catch (e) {
+			// err process
+		}
+	} 
+
+- 如果返回值的code不为0，请自行根据 [SIMBOSS-API](https://simboss.com/www/api-doc/index.html) 接口规范-参数规范 进行封装。
 
 ### 方法
 
