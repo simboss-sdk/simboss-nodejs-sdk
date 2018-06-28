@@ -38,7 +38,7 @@
 
 ### 方法
 
-所有方法基于SIMBOSS-API(https://simboss.com/www/api-doc/index.html)进行封装。传入的参数和API内容中的参数保持一致。具体参数传递规范和要求见api文档规范
+所有方法基于 [SIMBOSS-API](https://simboss.com/www/api-doc/index.html) 进行封装。传入的参数和API内容中的参数保持一致。具体参数传递规范和要求见api文档规范
 
 * Instance代表你自己初始化的实例对象
 
