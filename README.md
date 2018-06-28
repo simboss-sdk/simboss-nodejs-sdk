@@ -92,8 +92,8 @@
 | ------- | --------- | ---------:|
 |1.1 账户总览接口         |  Instance.dashboard.get  |  无  |
 |2.1 批量卡详情			 | Instance.device.detailBatch        |  {iccids,imsis,msisdns}  |
-|2.2 单卡详情				 | Instance.device.detail             |    {{iccid,imsi,msisdn}}  |
-|2.3 单卡已订购套餐列表	 | Instance.device.orderedPlans       |  {{iccid,imsi,msisdn}}  |
+|2.2 单卡详情				 | Instance.device.detail             |    {iccid,imsi,msisdn}  |
+|2.3 单卡已订购套餐列表	 | Instance.device.orderedPlans       |  {iccid,imsi,msisdn}  |
 |2.4 单卡可续费套餐信息	 | Instance.device.rateplans          |   {iccid,imsi,msisdn}    |
 |2.5 单卡续费				 | Instance.device.recharge           |   {iccid,imsi,msisdn,ratePlanId,month,externalOrder}  |
 |2.6 单卡续费记录			 | Instance.device.rechargeRecords    |   {iccid,imsi,msisdn}  |
