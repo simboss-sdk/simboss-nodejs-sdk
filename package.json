@@ -10,7 +10,7 @@
     "test": "./node_modules/mocha/bin/mocha ./test/test.js"
   },
   "keywords": [
-    "simboss","simCard"
+    "simboss","simCard","sdk"
   ],
   "author": "",
   "license": "ISC",

@@ -10,7 +10,7 @@
 
 这是我们建议的方式
 
-	$ npm install qiniu
+	$ npm install simboss-nodejs-sdk
 	
 #### 从 git 库下载
 
@@ -27,7 +27,7 @@
 - 你可以直接调用构造函数进行初始化，同时也可以调用初始化函数进行初始化
 
 ```js
-	const simbossSdkLib = require('../index.js');
+	const simbossSdkLib = require('simboss-nodejs-sdk');
 	// 你可以使用调用构造函数的方法
 	const simbossSdk = new simbossSdkLib({
 			appid: 'you appid',

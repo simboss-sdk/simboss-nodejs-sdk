@@ -3,15 +3,15 @@ const simbossSdkLib = require('../index.js'),
       expect = require("chai").expect;
 
 // 测试用ICCID列
-const iccidsList = ['89860401101730526378', '89860617030053428986'],
+const iccidsList = ['你的ICCID卡号', '你的ICCID卡号'],
       iccids = iccidsList.join(','),
       iccid = iccidsList[0]
 
 // 填入参数
 const simbossSdk = new simbossSdkLib({
-  appid: '10242014240',
-  secret: '4d0a9c1ba867dcc29f0a167d46efee89',
-  host: 'http://120.27.202.56:7001/2.0'
+  appid: '你的APPID',
+  secret: '你的SECRET',
+  host: '如果你有SIMBOSS的特殊接口地址，可以通过这个参数上传'
 });
 
 describe('apiCollect', () => {
