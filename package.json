@@ -1,6 +1,6 @@
 {
   "name": "simboss-nodejs-sdk",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "simboss平台NODE SDK",
   "main": "index.js",
   "directories": {
